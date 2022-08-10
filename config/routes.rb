@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
 
   get "homes/about" => "homes#about",as: 'about'
-  #get "users/show" => "users#show",as: 'user_path'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
